@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="/css/noticeWrite.css" />
     <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
@@ -43,7 +44,37 @@
         </div>
       </div>
     </header>
-    <div class="content"></div>
+    <div class="content">
+      <div class="content-container">
+        <table>
+          <tr>
+            <td id="info-title">
+              <input type="text" placeholder="공지사항 제목" id="info-title" />
+            </td>
+          </tr>
+          <tr>
+            <td id="info-name">동아리 1</td>
+            <td id="info-date">2024-04-12</td>
+          </tr>
+        </table>
+        <hr id="top-line" />
+        <div id="detail">
+          <tr>
+            <td>
+              <textarea
+                placeholder="공지사항 내용"
+                name="detail"
+                id="detail"
+              ></textarea>
+            </td>
+          </tr>
+        </div>
+        <hr id="bottom-line" />
+        <div class="submit">
+          <input type="submit" value="등록하기" id="submit" />
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p id="logo-name">MatDongSan</p>

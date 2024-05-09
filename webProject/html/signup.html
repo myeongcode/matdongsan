@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
     <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
@@ -43,7 +44,41 @@
         </div>
       </div>
     </header>
-    <div class="content"></div>
+    <div class="content">
+      <div class="content-container">
+        <h1>SIGN UP</h1>
+        <table>
+          <tr>
+            <td id="label">Email</td>
+            <td><input type="email" id="email" /></td>
+            <td><input type="button" id="dup" value="중복 체크" /></td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" id="pw" /></td>
+          </tr>
+          <tr>
+            <td>Confirm<br />Password</td>
+            <td><input type="password" id="cn-pw" /></td>
+          </tr>
+          <tr>
+            <td>Student ID</td>
+            <td><input type="text" id="st-id" /></td>
+          </tr>
+          <tr>
+            <td>Major</td>
+            <td><input type="text" id="major" /></td>
+          </tr>
+        </table>
+        <div class="sub">
+          <input type="submit" id="submit" value="SIGN UP" />
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p id="logo-name">MatDongSan</p>

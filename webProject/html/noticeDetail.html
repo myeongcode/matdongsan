@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="/css/noticeDetail.css" />
     <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
@@ -24,8 +25,8 @@
           <a id="logo" href="/html/index.html"><img src="/image/logo.png" /></a>
           <div class="head-content-container">
             <ul class="head-content-menu">
-              <li><a href="/html/basic.html">About</a></li>
-              <li><a href="/html/basic.html">Contact</a></li>
+              <li><a href="/html/index.html">About</a></li>
+              <li><a href="/html/index.html">Contact</a></li>
               <li><a href="/html/myPageUser.html">My Page</a></li>
             </ul>
             <ul class="head-content-account">
@@ -43,7 +44,24 @@
         </div>
       </div>
     </header>
-    <div class="content"></div>
+    <div class="content">
+      <div class="content-container">
+        <table>
+          <tr>
+            <td id="info-title">공지사항 제목</td>
+          </tr>
+          <tr>
+            <td id="info-name">동아리 1</td>
+            <td id="info-date">2024-04-12</td>
+          </tr>
+        </table>
+        <div id="detail">공지사항 내용</div>
+        <div class="submit">
+          <input type="submit" value="수정하기" id="edit" />
+          <input type="submit" value="삭제하기" id="del" />
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p id="logo-name">MatDongSan</p>

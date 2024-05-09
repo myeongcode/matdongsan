@@ -94,6 +94,7 @@ header .signup-btn {
 
 header .signup-btn:hover {
   background-color: #a8c4ff;
+  color: white;
   border-radius: 5px;
 }
 
@@ -180,17 +181,6 @@ footer #copy-name {
   font-size: 10pt;
   font-weight: 300;
 }
-/* 
-footer .support {
-  right: 0px;
-  bottom: -10px;
-}
-
-footer .about {
-  right: 150px;
-  bottom: 38px;
-}
-*/
 
 footer #support-name,
 #about-name {

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛동산</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="/css/clubDetail.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head-content">
+          <a id="logo" href="/html/index.html"><img src="/image/logo.png" /></a>
+          <div class="head-content-container">
+            <ul class="head-content-menu">
+              <li><a href="/html/basic.html">About</a></li>
+              <li><a href="/html/basic.html">Contact</a></li>
+              <li><a href="/html/myPageUser.html">My Page</a></li>
+            </ul>
+            <ul class="head-content-account">
+              <li><a class="signin-btn" href="/html/login.html">SignIn</a></li>
+              <li><a class="signup-btn" href="/html/signup.html">SignUp</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-menu">
+          <ul>
+            <li><a href="/html/clubAll.html">동아리</a></li>
+            <li><a href="/html/communityAll.html">커뮤니티</a></li>
+            <li><a href="/html/noticeBasic.html">공지사항</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="content-container">
+        <div class="content-page">
+          <ul>
+            <li><a href="/html/clubAll.html">동아리 &gt; </a></li>
+            <li>
+              <a href="/html/clubPerformingArts.html">학술예술분과 &gt; </a>
+            </li>
+            <li><a href="/html/clubDetail.html">동아리 1</a></li>
+          </ul>
+        </div>
+        <div class="content-title">
+          <ul>
+            <li id="club-name">동아리명</li>
+            <li id="club-intro">짧은 소개글</li>
+          </ul>
+        </div>
+        <div class="content-detail">
+          <div class="club-photo"></div>
+          <div class="club-content">
+            <div class="club-slogan">
+              <p id="slogan-title">
+                <img src="/image/Light bulb.png" /> 동아리 표어
+              </p>
+              <p id="slogan-content">
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 <br />
+                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동<br />
+                아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리
+                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설<br />
+                명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아<br />
+                리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리
+                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명<br />
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리<br />
+                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명
+              </p>
+            </div>
+            <div class="club-detail">
+              <div class="club-location">
+                <p id="location-title">
+                  <img src="/image/Location.png" /> 동방 위치
+                </p>
+                <p id="location-content">학생회관 -층 -호</p>
+              </div>
+              <div class="club-member">
+                <p id="member-title">
+                  <img src="/image/PeopleImg.png" /> 동아리 구성원
+                </p>
+                <p id="member-content">20명</p>
+              </div>
+              <div class="club-money">
+                <p id="money-title">
+                  <img src="/image/Money.png" /> 동아리 회비
+                </p>
+                <p id="money-content">20,000원</p>
+              </div>
+            </div>
+            <div class="club-pre">
+              <img src="/image/Leadership.png" /> 동아리장 :
+              컴퓨터정보통신공학부 홍길동 010-1234-5678
+            </div>
+            <div class="club-apply">
+              <img src="/image/Form.png" /> 지원하기 : 폼 링크
+            </div>
+          </div>
+        </div>
+        <div class="edit-button">
+          <input type="submit" value="소개 수정" id="submit" />
+        </div>
+        <div class="club">
+          <div class="detail-menu">
+            <ul>
+              <li><a href="#">동아리 공지</a></li>
+              <li><a href="#">동아리 사진</a></li>
+              <!-- 관리자만 해당 탭이 보이도록 -->
+              <li><a href="#">동아리 구성원 관리</a></li>
+            </ul>
+          </div>
+          <div>dd</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p id="logo-name">MatDongSan</p>
+        <p id="copy-name">
+          Copyright @ 2024 MatDongSan<br />
+          All rights reserved
+        </p>
+        <div class="about">
+          <p id="about-name">MatDongSan</p>
+          <p id="about-content">
+            About us<br />
+            Contact us
+          </p>
+        </div>
+        <div class="support">
+          <p id="support-name">Support</p>
+          <p id="support-content">
+            Help center<br />
+            Terms of service<br />
+            Legal<br />
+            Privacy policy<br />
+            Status
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

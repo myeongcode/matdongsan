@@ -62,7 +62,10 @@
           </ul>
         </div>
         <div class="content-detail">
-          <div class="club-photo"></div>
+          <div class="club-photo">
+            <!-- 아래 div대신 img로 이미지 삽입 -->
+            <div class="club-img"></div>
+          </div>
           <div class="club-content">
             <div class="club-slogan">
               <p id="slogan-title">
@@ -70,19 +73,27 @@
               </p>
               <p id="slogan-content">
                 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
-                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 <br />
-                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
-                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동<br />
-                아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리
-                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설<br />
-                명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
-                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아<br />
-                리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리
-                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명<br />
                 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
-                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리<br />
-                설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
-                동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동 아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설 명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아 리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리
+                설명동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설 명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아 리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
+                동아리 설명 동아리 설명 동아리 설명 동아리 설명 동아리 설명
               </p>
             </div>
             <div class="club-detail">
@@ -118,15 +129,284 @@
           <input type="submit" value="소개 수정" id="submit" />
         </div>
         <div class="club">
-          <div class="detail-menu">
+          <div class="detail-tab-menu">
             <ul>
-              <li><a href="#">동아리 공지</a></li>
-              <li><a href="#">동아리 사진</a></li>
-              <!-- 관리자만 해당 탭이 보이도록 -->
-              <li><a href="#">동아리 구성원 관리</a></li>
+              <li class="tab active">
+                <a href="#tab01">동아리 공지</a>
+              </li>
+              <li class="tab"><a href="#tab02">동아리 사진</a></li>
+              <!-- 관리자만 아래 탭이 보이도록 -->
+              <li class="tab"><a href="#tab03">동아리 구성원 관리</a></li>
+              <!-- 관리자만 위의 탭이 보이도록 -->
             </ul>
           </div>
-          <div>dd</div>
+          <div class="detail-tab-content">
+            <div id="tab1" class="content active">
+              <div class="notice">
+                <div class="notice-card">
+                  <div class="notice-header">
+                    <div class="notice-status">
+                      <div class="notice-title">
+                        공지사항 제목공지사항 제목공지사항 제목공지공지사항
+                        제목공지사항 제목공지사항 제목공지공지사항 제목공지사항
+                        제목공지사항 제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항 제목공지
+                      </div>
+                      <img class="notice-user-icon" src="/image/profile.jpg" />
+                      <div class="notice-user-name">홍길동</div>
+                    </div>
+                    <!-- 아래 내용은 관리자만 보이도록 설정 -->
+                    <div class="notice-edit">
+                      <button class="edit-btn">글 수정</button>
+                    </div>
+                    <!-- 위의 내용은 관리자만 보이도록 설정 -->
+                  </div>
+                  <div class="notice-content">
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용
+                  </div>
+                </div>
+                <div class="notice-card">
+                  <div class="notice-header">
+                    <div class="notice-status">
+                      <div class="notice-title">
+                        공지사항 제목공지사항 제목공지사항 제목공지공지사항
+                      </div>
+                      <img class="notice-user-icon" src="/image/profile.jpg" />
+                      <div class="notice-user-name">홍길동</div>
+                    </div>
+                    <!-- 아래 내용은 관리자만 보이도록 설정 -->
+                    <div class="notice-edit">
+                      <button class="edit-btn">글 수정</button>
+                    </div>
+                    <!-- 위의 내용은 관리자만 보이도록 설정 -->
+                  </div>
+                  <div class="notice-content">
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용
+                  </div>
+                </div>
+                <div class="notice-card">
+                  <div class="notice-header">
+                    <div class="notice-status">
+                      <div class="notice-title">
+                        공지사항 제목공지사항 제목공지사항 제목공지공지사항
+                        제목공지사항 제목공지사항 제목공지공지사항 제목공지사항
+                        제목공지사항 제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항
+                        제목공지공지사항 제목공지사항 제목공지사항 제목공지
+                      </div>
+                      <img class="notice-user-icon" src="/image/profile.jpg" />
+                      <div class="notice-user-name">홍길동</div>
+                    </div>
+                    <!-- 아래 내용은 관리자만 보이도록 설정 -->
+                    <div class="notice-edit">
+                      <button class="edit-btn">글 수정</button>
+                    </div>
+                    <!-- 위의 내용은 관리자만 보이도록 설정 -->
+                  </div>
+                  <div class="notice-content">
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용 공지내용 공지내용 공지내용
+                    공지내용 공지내용 공지내용
+                  </div>
+                </div>
+              </div>
+              <!-- 관리자만 아래 내용이 보이도록 -->
+              <div class="write-area">
+                <a href="#" class="write-btn">글 작성</a>
+              </div>
+              <!-- 관리자만 위의 내용이 보이도록 -->
+            </div>
+            <div id="tab2" class="content">
+              <div class="community">
+                <a href="/html/communityDetail.html" class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자1</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">설명</div>
+                </a>
+                <a class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자2</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">설명</div>
+                </a>
+                <a class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자3</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">
+                    설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+                  </div>
+                </a>
+                <a class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자4</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">설명</div>
+                </a>
+                <a class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자5</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">설명</div>
+                </a>
+                <a class="community-card">
+                  <div class="community-img"></div>
+                  <div class="community-user">
+                    <div class="community-user-icon"></div>
+                    <div class="community-title">작성자6</div>
+                    <div class="community-club">#동아리1</div>
+                  </div>
+                  <div class="community-desc">설명</div>
+                </a>
+              </div>
+              <div class="write-area">
+                <a href="#" class="write-btn">추가하기</a>
+                <a href="#" class="write-btn">삭제하기</a>
+              </div>
+            </div>
+            <!-- 관리자만 아래 내용이 보이도록 -->
+            <div id="tab3" class="content">
+              <div class="management-count">
+                <img class="group-img" src="/image/PeopleImg.png" alt="" />
+                <span>4명</span>
+              </div>
+              <div class="management">
+                <div class="member-card">
+                  <div class="member-inform">
+                    <img class="member-icon" src="/image/profile.jpg" alt="" />
+                    <div class="member-name">홍길동</div>
+                    <div class="member-major">컴퓨터정보통신공학부</div>
+                    <div class="member-id">2018253027</div>
+                  </div>
+                  <div class="member-edit">
+                    <button class="edit-btn">동아리 추방</button>
+                  </div>
+                </div>
+                <div class="member-card">
+                  <div class="member-inform">
+                    <img class="member-icon" src="/image/profile.jpg" alt="" />
+                    <div class="member-name">홍길동</div>
+                    <div class="member-major">컴퓨터정보통신공학부</div>
+                    <div class="member-id">2018253027</div>
+                  </div>
+                  <div class="member-edit">
+                    <button class="edit-btn">동아리 추방</button>
+                  </div>
+                </div>
+                <div class="member-card">
+                  <div class="member-inform">
+                    <img class="member-icon" src="/image/profile.jpg" alt="" />
+                    <div class="member-name">홍길동</div>
+                    <div class="member-major">컴퓨터정보통신공학부</div>
+                    <div class="member-id">2018253027</div>
+                  </div>
+                  <div class="member-edit">
+                    <button class="edit-btn">동아리 추방</button>
+                  </div>
+                </div>
+                <div class="member-card">
+                  <div class="member-inform">
+                    <img class="member-icon" src="/image/profile.jpg" alt="" />
+                    <div class="member-name">홍길동</div>
+                    <div class="member-major">컴퓨터정보통신공학부</div>
+                    <div class="member-id">2018253027</div>
+                  </div>
+                  <div class="member-edit">
+                    <button class="edit-btn">동아리 추방</button>
+                  </div>
+                </div>
+              </div>
+              <div class="write-area">
+                <a href="#" class="write-btn">구성원 추가하기</a>
+              </div>
+            </div>
+            <!-- 관리자만 위의 내용이 보이도록 -->
+          </div>
         </div>
       </div>
     </div>
@@ -157,5 +437,28 @@
         </div>
       </div>
     </footer>
+    <script>
+      const tabItem = document.querySelectorAll('.club .detail-tab-menu .tab');
+      const tabContent = document.querySelectorAll(
+        '.club .detail-tab-content .content'
+      );
+
+      tabItem.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          tabContent.forEach((content) => {
+            content.classList.remove('active');
+          });
+
+          tabItem.forEach((content) => {
+            content.classList.remove('active');
+          });
+
+          tabItem[index].classList.add('active');
+          tabContent[index].classList.add('active');
+        });
+      });
+    </script>
   </body>
 </html>

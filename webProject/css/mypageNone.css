@@ -87,6 +87,11 @@ h1 {
   font-size: 15pt;
 }
 
+#pro:hover {
+  background-color: #cbcbcb;
+  color: white;
+}
+
 #del-info {
   height: auto;
   padding-top: 15px;

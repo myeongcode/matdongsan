@@ -69,12 +69,16 @@ td {
 
 #write {
   width: 120px;
-  height: 35px;
+  height: 40px;
   font-size: 13pt;
   background-color: #2c6af5;
   color: white;
   position: absolute;
   right: 250px;
-  border: 1px solid #2c6af5;
+  border: none;
   border-radius: 5px;
+}
+
+#write:hover {
+  background-color: #a8c4ff;
 }

@@ -120,6 +120,27 @@ header .head-menu ul a#community {
   font-weight: 600;
 }
 
+.user-edit {
+    margin-left: auto;
+}
+
+#u-edit,
+#u-del,
+#u-write {
+  width: 90px;
+  height: 30px;
+  color: white;
+  background-color: #2c6af5;
+  border: none;
+  border-radius: 5px;
+}
+
+#u-edit:hover,
+#u-del:hover,
+#u-write:hover {
+  background-color: #a8c4ff;
+}
+
 .community-form-container .community-comment .community-comment-title {
   font-size: 30px;
   font-weight: 600;
@@ -131,6 +152,28 @@ header .head-menu ul a#community {
   height: 900px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.community-form-container .community-form-edit {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.community-form-container .community-form-edit #edit, #del {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #2c6af5;
+  border: none;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+.community-form-container .community-form-edit #edit:hover, #del:hover {
+  background-color: #a8c4ff;
 }
 
 .community-form-container .community-form-desc {

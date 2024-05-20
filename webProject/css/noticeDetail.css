@@ -38,10 +38,10 @@ table {
   text-align: right;
 }
 
-#top-line,
-#bottom-line {
+hr {
   width: 1200px;
   border: 1.5px solid black;
+  margin: 0px auto;
 }
 
 #detail {
@@ -61,9 +61,14 @@ table {
 #edit,
 #del {
   width: 150px;
-  height: 30px;
+  height: 40px;
   color: white;
   background-color: #2c6af5;
-  border: 1px solid #2c6af5;
+  border: none;
   border-radius: 5px;
+  font-size: 12pt;
+}
+
+#edit:hover, #del:hover {
+  background-color: #a8c4ff;
 }

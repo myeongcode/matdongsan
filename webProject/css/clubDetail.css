@@ -125,23 +125,14 @@
   padding-top: 30px;
 }
 
-.edit-button {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 300px;
+.content-detail .club-content
+.club-apply .club-form, .club-form:visited {
+  color: black;
 }
 
-.edit-button input {
-  width: 120px;
-  height: 40px;
-}
-
-.edit-button #submit {
-  color: white;
-  background-color: #2c6af5;
-  border: 1px solid #2c6af5;
-  border-radius: 5px;
-  font-size: 12pt;
+.content-detail .club-content
+.club-apply .club-form:hover {
+  color: #858585;
 }
 
 /* 상세 동아리 페이지 하단부분 */
@@ -473,4 +464,149 @@
 
 .club .detail-tab-content .content .write-area .write-btn:hover {
   background-color: #a8c4ff;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap {
+  background-color: rgba(0,0,0,.3);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  padding: 15px;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body {
+  width: 100%;
+  background-color: white;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-titlebox {
+  text-align: center;
+  padding: 50px;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-titlebox
+#popup-title {
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-buttonbox
+button {
+  width: 100px;
+  height: 35px;
+  font-size: 11pt;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-buttonbox
+.edit-yes {
+  background-color: #2c6af5;
+  border: 0.5px solid #2c6af5;
+  border-radius: 5px;
+  color: white;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-buttonbox
+.edit-yes:hover {
+  background-color: #a8c4ff;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-buttonbox
+.edit-no {
+  background-color: white;
+  border: 0.5px solid #2c6af5;
+  border-radius: 5px;
+  color: #2c6af5;
+}
+
+.club
+.detail-tab-content
+.content
+.popup-wrap
+.popup
+.popup-body
+.body-content
+.body-buttonbox
+.edit-no:hover {
+  background-color: #a8c4ff;
+  color: white;
 }

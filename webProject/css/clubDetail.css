@@ -370,9 +370,28 @@
 .club .detail-tab-content .content .write-area {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  align-items: center;
+  justify-content: start;
   padding: 20px 0;
   gap: 20px;
+}
+
+.club .detail-tab-content .content .write-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.club .detail-tab-content .content .write-area label {
+  font-size: 20px;
+}
+
+.club .detail-tab-content .content .write-area .member-add-form {
+  padding: 10px 5px;
+  font-size: 20px;
 }
 
 .club .detail-tab-content .content .management-count {

@@ -25,8 +25,8 @@
           <a id="logo" href="/html/index.html"><img src="/image/logo.png" /></a>
           <div class="head-content-container">
             <ul class="head-content-menu">
-              <li><a href="/html/basic.html">About</a></li>
-              <li><a href="/html/basic.html">Contact</a></li>
+              <li><a href="/html/about.html">About</a></li>
+              <li><a href="/html/contact.html">Contact</a></li>
               <li><a href="/html/myPageUser.html">My Page</a></li>
             </ul>
             <ul class="head-content-account">
@@ -46,7 +46,29 @@
     </header>
     <div class="content">
       <div class="content-container">
-        <div class="content-slider">슬라이드</div>
+        <div class="content-slider">
+          <div class="carousel">
+            <div class="carousel-control">
+              <div id="prev" class="carousel-prev"></div>
+              <div id="next" class="carousel-next"></div>
+            </div>
+            <div id="slide1" class="carousel-item active">
+              <span
+                >OMG 신입부원 모집<br />
+                5/29~6/7</span
+              >
+            </div>
+            <div id="slide2" class="carousel-item">
+              <span
+                >ASCII 해커톤 대회 개최<br />
+                5/20~6/10</span
+              >
+            </div>
+            <div id="slide3" class="carousel-item">
+              <span>🎉 enactus 이번 달 최고의 동아리 선정!</span>
+            </div>
+          </div>
+        </div>
         <div class="content-clubs">
           <a href="/html/clubPerformingArts.html" class="club-card">
             <div class="club-img"></div>
@@ -114,4 +136,32 @@
       </div>
     </footer>
   </body>
+  <script>
+    const prevBtn = document.querySelector('#prev');
+    const nextBtn = document.querySelector('#next');
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const items = document.querySelectorAll('.carousel-item');
+      let currentIndex = 0;
+
+      const showPrevSlide = () => {
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        items[currentIndex].classList.add('active');
+      };
+
+      const showNextSlide = () => {
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % items.length;
+        items[currentIndex].classList.add('active');
+      };
+
+      prevBtn.addEventListener('click', () => {
+        showPrevSlide();
+      });
+      nextBtn.addEventListener('click', () => {
+        showNextSlide();
+      });
+      setInterval(showNextSlide, 5000);
+    });
+  </script>
 </html>

@@ -44,7 +44,7 @@ h1 {
 #submit {
   width: 200px;
   height: 60px;
-  border: 1px solid #2C6AF5;
+  border: none;
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -53,4 +53,8 @@ h1 {
   font-size: 13pt;
   color: white;
   background-color: #2C6AF5;
+}
+
+#submit:hover {
+  background-color: #a8c4ff;
 }

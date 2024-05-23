@@ -39,9 +39,10 @@ table {
   text-align: right;
 }
 
-#top-line, #bottom-line {
+hr {
   width: 1200px;
   border: 1.5px solid black;
+  margin: 0px auto;
 }
 
 #detail {
@@ -71,9 +72,14 @@ textarea {
 
 #submit {
   width: 150px;
-  height: 30px;
+  height: 40px;
   color: white;
   background-color: #2C6AF5;
-  border: 1px solid #2C6AF5;
+  border: none;
   border-radius: 5px;
+  font-size: 12pt;
+}
+
+#submit:hover {
+  background-color: #a8c4ff;
 }

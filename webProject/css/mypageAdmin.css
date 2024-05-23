@@ -81,6 +81,11 @@ h1 {
   font-size: 15pt;
 }
 
+#pro:hover {
+  background-color: #cbcbcb;
+  color: white;
+}
+
 #del-info {
   height: auto;
   padding-top: 15px;
@@ -156,7 +161,7 @@ h1 {
 #button-club {
   width: 200px;
   height: 50px;
-  border: 1px solid #2C6AF5;
+  border: none;
   border-radius: 5px;
   background-color: #2C6AF5;
   font-size: 12pt;
@@ -171,4 +176,8 @@ h1 {
 
 #button-club a:link, a:visited {
   color: white;
+}
+
+#button-club:hover {
+  background-color: #a8c4ff;
 }

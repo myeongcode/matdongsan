@@ -121,12 +121,10 @@
               컴퓨터정보통신공학부 홍길동 010-1234-5678
             </div>
             <div class="club-apply">
-              <img src="/image/Form.png" /> 지원하기 : 폼 링크
+              <img src="/image/Form.png" /> 지원하기 :
+              <a class="club-form" href="https://forms.gle/4QpdvJEZr54HYspT8" target="_blank">Google Form</a>
             </div>
           </div>
-        </div>
-        <div class="edit-button">
-          <input type="submit" value="소개 수정" id="submit" />
         </div>
         <div class="club">
           <div class="detail-tab-menu">
@@ -397,14 +395,31 @@
                     <div class="member-id">2018253027</div>
                   </div>
                   <div class="member-edit">
-                    <button class="edit-btn">동아리 추방</button>
+                    <button class="edit-btn" id="popup-on">동아리 추방</button>
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
               <div class="write-area">
                 <label>추가할 구성원의 학번 : </label>
                 <input class="member-add-form" type="text" />
                 <a href="#" class="write-btn">구성원 추가하기</a>
+=======
+              <div class="popup-wrap" id="popup">
+                <div class="popup">
+                  <div class="popup-body">
+                    <div class="body-content">
+                      <div class="body-titlebox">
+                        <p id="popup-title">홍길동님을 추방하시겠습니까?</p>
+                      </div>
+                      <div class="body-buttonbox">
+                        <button class="edit-yes" id="popup-yes">예</button>
+                        <button class="edit-no" id="popup-no">아니오</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+>>>>>>> 66ecd8617a3c7624981487ba8e5c2dc813f6142f
               </div>
             </div>
             <!-- 관리자만 위의 내용이 보이도록 -->
@@ -412,7 +427,6 @@
         </div>
       </div>
     </div>
-
     <footer>
       <div class="footer-container">
         <p id="logo-name">MatDongSan</p>
@@ -460,6 +474,22 @@
           tabItem[index].classList.add('active');
           tabContent[index].classList.add('active');
         });
+      });
+
+      // 동아리원 추방 모달
+      const modal = document.querySelector('#popup');
+      const modalOpen = document.querySelector('#popup-on');
+      const modalYes = document.querySelector('#popup-yes');
+      const modalNo = document.querySelector('#popup-no');
+
+      modalOpen.addEventListener('click', function() {
+        modal.style.display = 'flex';
+      });
+      modalYes.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      modalNo.addEventListener('click', function() {
+        modal.style.display = 'none';
       });
     </script>
   </body>

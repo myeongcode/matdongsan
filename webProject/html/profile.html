@@ -37,8 +37,43 @@
         </div>
         <div class="head-menu">
           <ul>
-            <li><a href="/html/clubAll.html">동아리</a></li>
-            <li><a href="/html/communityAll.html">커뮤니티</a></li>
+            <li>
+              <a href="/html/clubAll.html">동아리</a>
+              <ul class="head-menu-dropdown">
+                <li onclick="window.location.href='/html/clubAll.html'">All</li>
+                <li
+                  onclick="window.location.href='/html/clubPerformingArts.html'"
+                >
+                  공연예술분과
+                </li>
+                <li>사회활동분과</li>
+                <li>생활체육분과</li>
+                <li>예술전시분과</li>
+                <li>음악연주분과</li>
+                <li>종교활동분과</li>
+                <li>학술연구분과</li>
+                <li>이번 달 최고의 동아리</li>
+              </ul>
+            </li>
+            <li>
+              <a href="/html/communityAll.html">커뮤니티</a>
+              <ul class="head-menu-dropdown">
+                <li onclick="window.location.href='/html/communityAll.html'">
+                  All
+                </li>
+                <li
+                  onclick="window.location.href='/html/communityPerformingArts.html'"
+                >
+                  공연예술분과
+                </li>
+                <li>사회활동분과</li>
+                <li>생활체육분과</li>
+                <li>예술전시분과</li>
+                <li>음악연주분과</li>
+                <li>종교활동분과</li>
+                <li>학술연구분과</li>
+              </ul>
+            </li>
             <li><a href="/html/noticeBasic.html">공지사항</a></li>
           </ul>
         </div>
@@ -73,7 +108,9 @@
             <td>Major</td>
             <td>
               <select name="major" id="major">
-                <option value="" selected disabled hidden>전공을 선택해주세요.</option>
+                <option value="" selected disabled hidden>
+                  전공을 선택해주세요.
+                </option>
                 <option value="cs">컴퓨터정보통신공학부</option>
                 <option value="sw">소프트웨어학부</option>
                 <option value="mn">경영학부</option>
@@ -83,7 +120,7 @@
                 <option value="pt">물리치료학과</option>
                 <option value="ot">작업치료학과</option>
               </select>
-          </td>
+            </td>
           </tr>
         </table>
         <div class="sub">
